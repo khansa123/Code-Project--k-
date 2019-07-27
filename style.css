@@ -1,0 +1,44 @@
+#home-section {
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+#question-1 {
+    padding-top: 10%;
+    min-height: 70vh;
+    font-family: Alegreya;
+    font-size: 20px;
+}
+
+#question-2 {
+    padding-top: 10%;
+    min-height: 70vh;
+    font-family: Alegreya;
+    font-size: 20px;
+}
+
+#question-3 {
+    padding-top: 10%;
+    min-height: 70vh;
+    font-family: Alegreya;
+    font-size: 20px;
+}
+
+#question-4 {
+    padding-top: 10%;
+    min-height: 70vh;
+    font-family: Alegreya;
+    font-size: 20px;
+}
+
+#all-question {
+    padding-top: 10%;
+    min-height: 70vh;
+    font-family: Alegreya;
+    font-size: 20px;
+}
+
+#all-page {
+    background-color:#9CFCF3  ;
+}
+

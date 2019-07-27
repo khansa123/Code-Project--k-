@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">History Quiz App</a>
+            </ul>
+        </div>
+    </nav>
+
+
+<div id="all-page">
+
+<div class="container" id="home-section">
+    <div class="center-align">
+        <h1>Bicentennial Quiz</h1>
+        <h4>Do you know the History of Singapore well?</h4>
+        <br>
+        <a class="waves-effect waves-light btn-large blue darken-4 animated" href="#question-1">Start Quiz</a>
+    </div>
+</div>
+<hr>
+<div class="container" id="question-1">
+    <div id="question-1" class="question-section container" >
+        <h3>(1) Who founded Singapore in 1819?</h3>
+    <div>
+        <label>
+            <input class="with-gap" name="qn1" type="radio" value="1" checked="">
+            <span>Sir Thomas Stamford Raffles</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn1" type="radio" value="2">
+            <span>John Crawfurd</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn1" type="radio" value="3">
+            <span>William Farquhar</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn1" type="radio" value="4">
+            <span>Sang Nila Utama</span>
+        </label>
+    </div>
+    <br> 
+    <a class="waves-effect waves-light btn-large blue darken-4 animated" onclick="calculatePoints()"href="#question-2">Next Question</a>
+    </div>  
+</div>
+<hr>
+<div class="container" id="question-2">
+    <div id="question-2" class="question-section container" >
+        <h3>(2) When did Singapore gain independence?</h3>
+    <div>
+        <label>
+            <input class="with-gap" name="qn2" type="radio" value="1" checked="">
+            <span>2015</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn2" type="radio" value="2">
+            <span>1942</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn2" type="radio" value="3">
+            <span>1965</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn2" type="radio" value="4">
+            <span>1819</span>
+        </label>
+    </div> 
+    <br>
+    <a class="waves-effect waves-light btn-large blue darken-4 animated" onclick="calculatePoints()" href="#question-3">Next Question</a>
+    </div> 
+    <br>
+</div>
+<hr>
+<div class="container" id="question-3">
+    <div id="question-3" class="question-section container" >
+        <h3>(3) Where is Sang Nila Utama from?</h3>
+    <div>
+        <label>
+            <input class="with-gap" name="qn3" type="radio" value="1" checked="">
+            <span>Lion City</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn3" type="radio" value="2">
+            <span>Malaysia</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn3" type="radio" value="3">
+            <span>Singapore</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn3" type="radio" value="4">
+            <span>Indonesia</span>
+        </label>
+    </div>
+    <br>
+    <a class="waves-effect waves-light btn-large blue darken-4 animated" onclick="calculatePoints()" href="#question-4">Next Question</a> 
+    </div>
+</div>
+<hr>
+<div class="container" id="question-4">
+    <div id="question-4" class="question-section container" >
+        <h3>(4) What is the official language(s) of Singapore?</h3>
+    <div>
+        <label>
+            <input class="with-gap" name="qn4" type="radio" value="1" checked="">
+            <span>English</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn4" type="radio" value="2">
+            <span>Malay</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn4" type="radio" value="3">
+            <span>Tamil</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input class="with-gap" name="qn4" type="radio" value="4">
+            <span>Mandarin</span>
+        </label>
+    </div> 
+    <div>
+        <label>
+            <input class="with-gap" name="qn4" type="radio" value="4">
+            <span>All of the above</span>
+        </label>
+    </div> 
+    <br>
+    <a class="waves-effect waves-light btn-large blue darken-4 animated" onclick="showPoints()" href=  >Submit answer</a> 
+    <div id="results"></div>
+    <br>
+</div>
+</div>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script> 
+
+    </body>
+</html>
